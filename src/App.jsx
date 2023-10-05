@@ -2,7 +2,7 @@ import { Routes, Route } from "react-router-dom";
 import Home from "./pages/Home";
 import About from "./pages/About";
 import "./server";
-import Vans from "./pages/Vans/Vans";
+import Vans from "./pages/Host/Vans";
 // import { HashRouter } from "react-router-dom";
 import VanDetail from "./pages/Vans/VanDetail";
 import Layout from "./components/Layout";
@@ -28,6 +28,7 @@ function App() {
 
           <Route index element={<Dashboard />} />
           <Route path="reviews" element={<Reviews />} />
+          <Route path="vans" element={<Vans/>} />
           <Route path="income" element={<Income />} />
           </Route>
 
